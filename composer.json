@@ -1,0 +1,47 @@
+{
+    "name": "metallheart/laravel-telegram-logger",
+    "description": "Laravel package for logging to Telegram",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Metallheart",
+            "email": "metallheart@example.com"
+        }
+    ],
+    "keywords": [
+        "laravel",
+        "telegram",
+        "logging",
+        "monolog"
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/http": "^10.0|^11.0|^12.0",
+        "monolog/monolog": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0|^11.0",
+        "orchestra/testbench": "^8.0|^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Metallheart\\LaravelTelegramLogger\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Metallheart\\LaravelTelegramLogger\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Metallheart\\LaravelTelegramLogger\\TelegramLoggerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+} 
